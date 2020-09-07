@@ -526,10 +526,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4685059091323749514, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
-      propertyPath: playerSpeed
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 6670510849803499376, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -573,14 +569,6 @@ PrefabInstance:
     - target: {fileID: 6670510849803499376, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6670510849803499378, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
-      propertyPath: m_GravityScale
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6670510849803499378, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6670510849803499382, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: m_Name
