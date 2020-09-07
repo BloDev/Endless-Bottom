@@ -423,10 +423,10 @@ MonoBehaviour:
   platformPrefab: {fileID: 3401049719237775351, guid: 1fb218598acc00542bc80bc23cde2ce8, type: 3}
   timer: 0
   spawnTimer: 2
-  spawnSpeedIncrement: 0.25
+  spawnSpeedIncrement: 0.05
   spawnSpeedMin: 0.5
   platformSpeed: 2
-  platformSpeedIncrement: 0.5
+  platformSpeedIncrement: 0.1
   platformSpeedMax: 5
 --- !u!1 &1731910797
 GameObject:
@@ -528,7 +528,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4685059091323749514, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: playerSpeed
-      value: 1000
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 6670510849803499376, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -536,7 +536,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6670510849803499376, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.7000003
+      value: -5.2999997
       objectReference: {fileID: 0}
     - target: {fileID: 6670510849803499376, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
       propertyPath: m_LocalPosition.z
