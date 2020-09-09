@@ -10,21 +10,24 @@ public class Parallax : MonoBehaviour
     private float currentPos;
     public float parallaxEffect; 
 
-
-    // Start is called before the first frame update
+    /*
     void Start()
     {
         startPos = transform.position.y; 
     }
+    */
 
-    // Update is called once per frame
     void Update()
     {   
+        /*
         currentPos = transform.position.y; 
         float distance = target.transform.position.y * parallaxEffect;
 
         if (startPos - distance >= currentPos) {
             transform.position = new Vector3(transform.position.x, startPos - distance, transform.position.z);  
         }
+        */
+
+        transform.position = new Vector3(transform.position.x, transform.position.y + parallaxEffect, transform.position.z);  
     }
 }
