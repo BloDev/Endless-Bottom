@@ -7,7 +7,7 @@ public class Parallax : MonoBehaviour
 
     public GameObject target; 
     private float startPos; 
-    private float height; 
+    private float currentPos;
     public float parallaxEffect; 
 
 
@@ -15,13 +15,16 @@ public class Parallax : MonoBehaviour
     void Start()
     {
         startPos = transform.position.y; 
-        // height = GetComponent<SpriteRenderer>().bounds.size.y; 
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
+    void Update()
+    {   
+        currentPos = transform.position.y; 
         float distance = target.transform.position.y * parallaxEffect;
-        transform.position = new Vector3(transform.position.x, startPos - distance, transform.position.z);  
+
+        if (startPos - distance >= currentPos) {
+            transform.position = new Vector3(transform.position.x, startPos - distance, transform.position.z);  
+        }
     }
 }
