@@ -1289,7 +1289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 12001715}
-  parallaxEffect: 0.5
+  parallaxEffect: 0.005
 --- !u!1 &1005808644
 GameObject:
   m_ObjectHideFlags: 0
