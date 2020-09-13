@@ -10,7 +10,7 @@ public class Parallax : MonoBehaviour
   
     void Update()
     {   
-        transform.position = new Vector3(transform.position.x, transform.position.y + backgroundSpeed, transform.position.z);  
+        transform.position = new Vector3(transform.position.x, transform.position.y + backgroundSpeed * 10 * Time.deltaTime, transform.position.z);  
         
         if (transform.position.y >= endY) {
             transform.position = new Vector3(transform.position.x, endY * -1, transform.position.z); 
