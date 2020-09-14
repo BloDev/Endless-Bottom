@@ -17,6 +17,9 @@ public class Score : MonoBehaviour
     void OnTriggerEnter2D(Collider2D obj) {
         if (obj.CompareTag("Player")) {
             Destroy(obj.gameObject);
+            if (score > PlayerPrefs.GetInt("HighScore", 0)) {
+                PlayerPrefs.SetInt("HighScore", score);
+            }
         }
 
         if (obj.CompareTag("Platform")) {
