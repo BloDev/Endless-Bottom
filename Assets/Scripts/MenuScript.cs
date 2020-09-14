@@ -7,10 +7,10 @@ using TMPro;
 
 public class MenuScript : MonoBehaviour
 {
-    public TMP_Text highScore;
+    public TMP_Text highScoreText;
 
     void Start() {
-        highScore.SetText("High Score: " + PlayerPrefs.GetInt("HighScore", 0).ToString());
+        highScoreText.SetText("High Score: " + PlayerPrefs.GetInt("HighScore", 0).ToString());
     }
 
     public void Play() {
@@ -19,6 +19,6 @@ public class MenuScript : MonoBehaviour
 
     public void Reset() {
         PlayerPrefs.DeleteAll();
-        highScore.SetText("High Score: 0");
+        highScoreText.SetText("High Score: 0");
     }
 }
