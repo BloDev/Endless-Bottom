@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraSetup : MonoBehaviour
+public class Initializer : MonoBehaviour
 {
     public BoxCollider2D top;
     public BoxCollider2D bottom;
