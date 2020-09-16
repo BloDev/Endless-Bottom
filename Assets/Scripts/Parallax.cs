@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Parallax : MonoBehaviour
-{
-    private float height; 
+public class Parallax : MonoBehaviour {
+
     public float endY; 
     public float backgroundSpeed; 
+    private float height; 
   
-    void Update()
-    {   
+    void Update() {   
+
         transform.position = new Vector3(transform.position.x, transform.position.y + backgroundSpeed * Time.deltaTime, transform.position.z);  
         
         if (transform.position.y >= endY) {

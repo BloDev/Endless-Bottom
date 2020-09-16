@@ -16,9 +16,8 @@ public class PlatformSpawner : MonoBehaviour
     
     private GameObject platform;
 
-    // Start is called before the first frame update
-    void Update()
-    {
+    void Update() {
+
         if (timer <= 0f) {
             
             platform = Instantiate(platformPrefab, transform.position, Quaternion.identity);
