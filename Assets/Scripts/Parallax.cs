@@ -5,15 +5,25 @@ using UnityEngine;
 public class Parallax : MonoBehaviour {
 
     public float endY; 
-    public float backgroundSpeed; 
-    private float height; 
-  
-    void Update() {   
+    public float startY;
+    private float backgroundSpeed; 
 
-        transform.position = new Vector3(transform.position.x, transform.position.y + backgroundSpeed * Time.deltaTime, transform.position.z);  
+    void Update() {   
+        /*
+        transform.Translate(Vector2.up * backgroundSpeed * Time.deltaTime);
         
         if (transform.position.y >= endY) {
-            transform.position = new Vector3(transform.position.x, endY * -1, transform.position.z); 
+            transform.position = new Vector2(transform.position.x, endY * -1); 
+        }
+        */
+        backgroundSpeed = GameObject.Find("Spawner").GetComponent<PlatformSpawner>().platformSpeed;
+
+        foreach (Transform child in transform) {
+            child.Translate(Vector2.up * backgroundSpeed * Time.deltaTime);
+            if (child.position.y >= endY) {
+                child.position = new Vector2(child.position.x, endY * -1); 
+            }
+            backgroundSpeed = backgroundSpeed / 2; 
         }
     }
 }
