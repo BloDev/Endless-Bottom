@@ -13,7 +13,7 @@ public class Parallax : MonoBehaviour {
         foreach (Transform child in transform) {
             child.Translate(Vector2.up * backgroundSpeed * Time.deltaTime);
             if (child.position.y >= endY) {
-                child.position = new Vector2(child.position.x, endY * -1); 
+                child.position = new Vector3(child.position.x, endY * -1, child.position.z); 
             }
             backgroundSpeed = backgroundSpeed / 2; 
         }
