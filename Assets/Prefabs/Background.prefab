@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 1273065720723842430}
   - component: {fileID: 1273065720723842425}
   - component: {fileID: 8060300217037553421}
+  - component: {fileID: 4455644163880206383}
   m_Layer: 0
   m_Name: Background 0
   m_TagString: Untagged
@@ -154,8 +155,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -4.3471994, y: -11.753064}
-      - {x: -4.7546225, y: -11.591237}
+    - - {x: -4.7546225, y: -11.591237}
       - {x: -4.4626794, y: -11.1966915}
       - {x: -4.8027043, y: -10.947079}
       - {x: -4.4232893, y: -10.780864}
@@ -276,8 +276,8 @@ PolygonCollider2D:
       - {x: -4.775455, y: 12}
       - {x: -5, y: 12}
       - {x: -5, y: -12}
-      - {x: -4.5364447, y: -11.907287}
-      - {x: -4.3364377, y: -11.757482}
+      - {x: -4.7762303, y: -12.001157}
+      - {x: -4.3155866, y: -11.788773}
     - - {x: 5, y: 12}
       - {x: 4.78051, y: 12}
       - {x: 4.5588737, y: 11.822768}
@@ -402,6 +402,18 @@ PolygonCollider2D:
       - {x: 4.810584, y: -12}
       - {x: 5, y: -12}
       - {x: 5, y: 12}
+--- !u!114 &4455644163880206383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273065720723842431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebf3eaf999f8b845bbb070761643225, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1273065721575103443
 GameObject:
   m_ObjectHideFlags: 0
