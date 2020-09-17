@@ -666,7 +666,7 @@ MonoBehaviour:
   spawnSpeedMin: 0.5
   platformSpeed: 2
   platformSpeedIncrement: 0.1
-  platformSpeedMax: 10
+  platformSpeedMax: 5
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
