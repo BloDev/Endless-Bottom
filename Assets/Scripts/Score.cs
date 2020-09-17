@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
-public class Score : MonoBehaviour
-{
+public class Score : MonoBehaviour {
+
     public TMP_Text scoreText;
     public TMP_Text highScoreText;
     private int score = 0;
@@ -17,17 +17,23 @@ public class Score : MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D obj) {
+        
         if (obj.CompareTag("Player")) {
+            
             Destroy(obj.gameObject);
+            
             if (score > PlayerPrefs.GetInt("HighScore", 0)) {
                 PlayerPrefs.SetInt("HighScore", score);
             }
+            
             SceneManager.LoadScene(0);
         }
 
         if (obj.CompareTag("Platform")) {
+            
             score++;
             scoreText.SetText(score.ToString());
+            
             if (score > PlayerPrefs.GetInt("HighScore", 0)) {
                 highScoreText.SetText("High Score: " + score);
             }

@@ -2,15 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Initializer : MonoBehaviour
-{
+public class Initializer : MonoBehaviour {
     public BoxCollider2D top;
     public BoxCollider2D bottom;
     public BoxCollider2D left;
     public BoxCollider2D right;
 
-    void Start()
-    {
+    void Start() {
+        
         Camera.main.orthographicSize = (Camera.main.orthographicSize / 2) / Camera.main.aspect;
 
         top.size = new Vector2(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * 2f, 0f, 0f)).x, 1f);
