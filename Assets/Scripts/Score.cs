@@ -9,7 +9,7 @@ public class Score : MonoBehaviour {
 
     public TMP_Text scoreText;
     public TMP_Text highScoreText;
-    private int score = 0;
+    public int score = 0;
 
     void Start() {
         scoreText.SetText("0");
