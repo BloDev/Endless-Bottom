@@ -13,8 +13,6 @@ public class Initializer : MonoBehaviour {
         
         Camera.main.orthographicSize = (Camera.main.orthographicSize / 2) / Camera.main.aspect;
 
-        Debug.Log(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * 2f, 0f, 0f)).x);
-
         top.localScale = new Vector2(Camera.main.ScreenToWorldPoint(new Vector3(Screen.width * 2f, 0f, 0f)).x, 1f);
         top.position = new Vector2(0f, Camera.main.ScreenToWorldPoint(new Vector3(0f, Screen.height, 0f)).y + 0.5f);
 
