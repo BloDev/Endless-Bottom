@@ -15,13 +15,14 @@ public class PlatformSpawner : MonoBehaviour
     public float platformSpeedMax;
     
     private GameObject platform;
+    private int n;
 
     void Update() {
 
         if (timer <= 0f) {
             
             platform = Instantiate(platformPrefab, transform.position, Quaternion.identity);
-            int n = Random.Range(0, platform.transform.childCount - 1);
+            n = Random.Range(0, platform.transform.childCount - 1);
 
             Destroy(platform.transform.GetChild(n).gameObject);
             Destroy(platform.transform.GetChild(n + 1).gameObject);
