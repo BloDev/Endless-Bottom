@@ -660,7 +660,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 6279015395442414998, guid: 1fb218598acc00542bc80bc23cde2ce8, type: 3}
-  timer: 0
   spawnTimer: 2
   spawnSpeedIncrement: 0.025
   spawnSpeedMin: 0.5
