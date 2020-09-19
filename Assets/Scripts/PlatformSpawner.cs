@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformSpawner : MonoBehaviour
 {
     public GameObject platformPrefab;
-    public float timer;
+    private float timer;
     public float spawnTimer;
     public float spawnSpeedIncrement;
     public float spawnSpeedMin;
@@ -16,6 +16,22 @@ public class PlatformSpawner : MonoBehaviour
     
     private GameObject platform;
     private int n;
+
+    void Start() {
+        StartCoroutine(spawn());
+    }
+
+    IEnumerator spawn() {
+        while (true) {
+            yield return new WaitForSeconds(1);
+            if (spawnTimer > spawnSpeedMin) {
+                spawnTimer -= spawnSpeedIncrement;
+            }
+            if (platformSpeed < platformSpeedMax) {
+                platformSpeed += platformSpeedIncrement;
+            }
+        }
+    }
 
     void Update() {
 
@@ -28,14 +44,6 @@ public class PlatformSpawner : MonoBehaviour
             Destroy(platform.transform.GetChild(n + 1).gameObject);
 
             timer = spawnTimer;
-
-            if (spawnTimer > spawnSpeedMin) {
-                spawnTimer -= spawnSpeedIncrement;
-            }
-
-            if (platformSpeed < platformSpeedMax) {
-                platformSpeed += platformSpeedIncrement;
-            }
         }
 
         timer -= Time.deltaTime;
