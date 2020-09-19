@@ -7,7 +7,7 @@ public class Parallax : MonoBehaviour {
     public float endY; 
     private float backgroundSpeed; 
 
-    void Update() {   
+    void FixedUpdate() {   
         backgroundSpeed = GameObject.Find("Spawner").GetComponent<PlatformSpawner>().platformSpeed;
 
         foreach (Transform child in transform) {
