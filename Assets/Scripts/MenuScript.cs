@@ -14,11 +14,10 @@ public class MenuScript : MonoBehaviour
     }
 
     public void Play() {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
-    public void Reset() {
-        PlayerPrefs.DeleteAll();
-        highScoreText.SetText("High Score: 0");
+    public void Quit() {
+        Application.Quit();
     }
 }

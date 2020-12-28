@@ -26,7 +26,7 @@ public class Score : MonoBehaviour {
                 PlayerPrefs.SetInt("HighScore", score);
             }
             
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
 
         if (obj.CompareTag("Platform")) {

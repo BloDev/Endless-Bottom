@@ -19,7 +19,7 @@ public class Spikes : MonoBehaviour {
                 PlayerPrefs.SetInt("HighScore", score);
             }
             
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
     }
 }
