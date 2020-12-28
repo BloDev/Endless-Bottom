@@ -15,7 +15,7 @@ public class Parallax : MonoBehaviour {
             if (child.position.y >= endY) {
                 child.position = new Vector3(child.position.x, endY * -1, child.position.z); 
             }
-            backgroundSpeed = backgroundSpeed / 2; 
+            backgroundSpeed = backgroundSpeed / (float)1.5; 
         }
     }
 }
