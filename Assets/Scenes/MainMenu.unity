@@ -156,6 +156,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1026035220}
+  currentScoreText: {fileID: 0}
+  pauseMenu: {fileID: 0}
 --- !u!114 &326752421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +659,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 326752420}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -789,7 +791,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 326752420}
-        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
