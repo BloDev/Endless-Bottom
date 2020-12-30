@@ -5,21 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Spikes : MonoBehaviour {
 
-    private int score;
-
     void OnCollisionEnter2D(Collision2D col) {
         
         if (col.gameObject.CompareTag("Player")) {
 
-            score = GameObject.Find("TopCollider").GetComponent<Score>().score;
-            
-            Destroy(col.gameObject);
-            
-            if (score > PlayerPrefs.GetInt("HighScore", 0)) {
-                PlayerPrefs.SetInt("HighScore", score);
+            if (PlayerPrefs.GetInt("Score", 0) > PlayerPrefs.GetInt("HighScore", 0)) {
+                PlayerPrefs.SetInt("HighScore", PlayerPrefs.GetInt("Score", 0));
             }
             
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }

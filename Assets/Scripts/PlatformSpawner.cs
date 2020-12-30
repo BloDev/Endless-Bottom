@@ -23,10 +23,13 @@ public class PlatformSpawner : MonoBehaviour
 
     IEnumerator spawn() {
         while (true) {
+            
             yield return new WaitForSeconds(1);
+
             if (spawnTimer > spawnSpeedMin) {
                 spawnTimer -= spawnSpeedIncrement;
             }
+
             if (platformSpeed < platformSpeedMax) {
                 platformSpeed += platformSpeedIncrement;
             }

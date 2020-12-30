@@ -9,29 +9,29 @@ public class Score : MonoBehaviour {
 
     public TMP_Text scoreText;
     public TMP_Text highScoreText;
-    public int score = 0;
+    private int score = 0;
 
     void Start() {
         scoreText.SetText("0");
+        PlayerPrefs.SetInt("Score", score);
         highScoreText.SetText("High Score: " + PlayerPrefs.GetInt("HighScore", 0).ToString());
     }
 
     void OnTriggerEnter2D(Collider2D obj) {
         
         if (obj.CompareTag("Player")) {
-            
-            Destroy(obj.gameObject);
-            
+
             if (score > PlayerPrefs.GetInt("HighScore", 0)) {
                 PlayerPrefs.SetInt("HighScore", score);
             }
             
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
 
         if (obj.CompareTag("Platform")) {
             
             score++;
+            PlayerPrefs.SetInt("Score", score);
             scoreText.SetText(score.ToString());
             
             if (score > PlayerPrefs.GetInt("HighScore", 0)) {

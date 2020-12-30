@@ -206,8 +206,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429183511}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: Play
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 429183507}
   - component: {fileID: 429183511}
   m_Layer: 5
-  m_Name: MenuUI
+  m_Name: GameOverUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,12 +369,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 429183506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3105fd8296c7efd429bc2be8af684e8f, type: 3}
+  m_Script: {fileID: 11500000, guid: a8d619d53fe0ddf49a62d323f2d83a01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   highScoreText: {fileID: 1044596536}
   currentScoreText: {fileID: 1028001806}
-  pauseMenu: {fileID: 0}
 --- !u!1 &511407413
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +532,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429183511}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
