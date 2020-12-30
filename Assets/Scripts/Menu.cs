@@ -13,15 +13,18 @@ public class Menu : MonoBehaviour
 
     void Start() { 
         highScoreText.SetText("High Score: " + PlayerPrefs.GetInt("HighScore", 0).ToString());
-        currentScoreText.SetText("Current Score: " + PlayerPrefs.GetInt("Score", 0).ToString());
+    }
+
+    void Update() {
+        currentScoreText.SetText("Current Score: " + GameObject.Find("TopCollider").GetComponent<Score>().score);  
     }
 
     public void Play() {
         SceneManager.LoadScene(2);
     }
 
-    public void Pause() {
-        Time.timeScale = 0f; 
+    public void Pause() { 
+        Time.timeScale = 0f;
         pauseMenu.SetActive(true);
     }
 
