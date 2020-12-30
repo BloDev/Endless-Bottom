@@ -1494,7 +1494,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 316262230}
-  currentScoreText: {fileID: 2134472034}
   highScoreText: {fileID: 285360403}
   score: 0
 --- !u!1 &1622019245
