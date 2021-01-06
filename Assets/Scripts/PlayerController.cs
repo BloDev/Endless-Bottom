@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour {
     Rigidbody2D rb;
     public GameObject effect;
     public float playerSpeed;
-    private float particleLifetime = 1f;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -19,8 +18,7 @@ public class PlayerController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Platform") {
-            GameObject landingParticle = Instantiate(effect, transform.position, Quaternion.identity);
-            Destroy(landingParticle, particleLifetime);
+            Instantiate(effect, transform.position, Quaternion.identity);
         }
     }
 }
