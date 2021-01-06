@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
     Rigidbody2D rb;
     public GameObject effect;
     public float playerSpeed;
-    private float particleLifetime = 1f;
+    private float particleLifetime = 0.25f;
 
     void Start() {
         rb = GetComponent<Rigidbody2D>();
