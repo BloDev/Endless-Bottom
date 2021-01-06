@@ -2033,5 +2033,9 @@ PrefabInstance:
       propertyPath: effect
       value: 
       objectReference: {fileID: 4782411551339002621, guid: 859815c98377176429cafab0899caac7, type: 3}
+    - target: {fileID: 8499159155478246111, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ebacadeccc621084e9dce5c292f7d55a, type: 3}

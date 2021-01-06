@@ -37,6 +37,8 @@ public class Score : MonoBehaviour {
             if (score > PlayerPrefs.GetInt("HighScore", 0)) {
                 highScoreText.SetText("High Score: " + score);
             }
+
+            Destroy(obj.gameObject);
         }
     }
 }
