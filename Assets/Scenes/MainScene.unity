@@ -2076,9 +2076,13 @@ MonoBehaviour:
   sounds:
   - name: Background Music
     clip: {fileID: 8300000, guid: 6611b15449ebc23448f6f61a1af89602, type: 3}
+    volume: 0.5
+    loop: 1
     source: {fileID: 0}
-  - name: ' Player Scores Sound '
+  - name: Player Scores Sound
     clip: {fileID: 8300000, guid: 02dc0efd6da936d41b36a8b8a83ca3a7, type: 3}
+    volume: 1
+    loop: 0
     source: {fileID: 0}
 --- !u!4 &2135241613
 Transform:
