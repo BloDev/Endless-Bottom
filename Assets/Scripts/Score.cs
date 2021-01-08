@@ -31,6 +31,7 @@ public class Score : MonoBehaviour {
         if (obj.CompareTag("Platform")) {
             
             score++;
+            FindObjectOfType<AudioManager>().Play("Player Scores Sound");
             PlayerPrefs.SetInt("Score", score);
             scoreText.SetText(score.ToString());
             
