@@ -449,6 +449,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511407413}
   m_CullTransparentMesh: 0
+--- !u!1 &550218125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 550218127}
+  - component: {fileID: 550218126}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &550218126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550218125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de594f586f4032a48a74ce4e8ff2f09f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Background Music
+    clip: {fileID: 8300000, guid: 6611b15449ebc23448f6f61a1af89602, type: 3}
+    volume: 0.5
+    loop: 1
+    source: {fileID: 0}
+  - name: Pause Sound
+    clip: {fileID: 8300000, guid: 7c17ce9b839f16040a5d267a1d54020c, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Unpause Sound
+    clip: {fileID: 8300000, guid: 8286b51b421abd54ba2ff86d1869a023, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Player Death Sound
+    clip: {fileID: 8300000, guid: 450619238051dee4ebd7a18ac7f4353a, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+--- !u!4 &550218127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550218125}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &606753409
 GameObject:
   m_ObjectHideFlags: 0
