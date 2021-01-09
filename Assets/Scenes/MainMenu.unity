@@ -953,13 +953,18 @@ MonoBehaviour:
     volume: 1
     loop: 0
     source: {fileID: 0}
-  - name: Unpause Sound
+  - name: UnPause Sound
     clip: {fileID: 8300000, guid: 8286b51b421abd54ba2ff86d1869a023, type: 3}
     volume: 1
     loop: 0
     source: {fileID: 0}
   - name: Player Death Sound
     clip: {fileID: 8300000, guid: 450619238051dee4ebd7a18ac7f4353a, type: 3}
+    volume: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Button Clicking Sound
+    clip: {fileID: 8300000, guid: 450e73d674b65c54480ba7e7569a01ca, type: 3}
     volume: 1
     loop: 0
     source: {fileID: 0}

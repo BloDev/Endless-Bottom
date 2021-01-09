@@ -13,8 +13,7 @@ public class AudioManager : MonoBehaviour
 
         if (audioManager == null) {
             audioManager = this;
-        }
-        else {
+        } else {
             Destroy(gameObject);
             return;
         }
@@ -48,7 +47,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void Unpause(string name) {
+    public void UnPause(string name) {
         foreach (Sound sound in sounds) {
             if (String.Equals(sound.name, name)) {
                 sound.source.UnPause();

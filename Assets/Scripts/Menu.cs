@@ -14,10 +14,12 @@ public class Menu : MonoBehaviour
     }
 
     public void Play() {
+        FindObjectOfType<AudioManager>().Play("Button Clicking Sound");
         SceneManager.LoadScene(1);
     }
 
     public void Quit() {
+        FindObjectOfType<AudioManager>().Play("Button Clicking Sound");
         Application.Quit();
     }
 }

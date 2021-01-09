@@ -17,8 +17,8 @@ public class Main : MonoBehaviour
     }
 
     public void Resume() {
-        FindObjectOfType<AudioManager>().Play("Unpause Sound");
-        FindObjectOfType<AudioManager>().Unpause("Background Music");
+        FindObjectOfType<AudioManager>().Play("UnPause Sound");
+        FindObjectOfType<AudioManager>().UnPause("Background Music");
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
     }
