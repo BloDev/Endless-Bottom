@@ -8,8 +8,7 @@ public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds; 
 
-    void Awake()
-    {
+    void Awake() {
         foreach (Sound sound in sounds) {
             sound.source = gameObject.AddComponent<AudioSource>();
             sound.source.clip = sound.clip;
@@ -18,13 +17,11 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Start() 
-    {
+    void Start() {
         Play("Background Music");
     }
 
-    public void Play(string name)
-    {
+    public void Play(string name) {
         foreach (Sound sound in sounds) {
             if (String.Equals(sound.name, name)) {
                 sound.source.Play();
