@@ -28,4 +28,20 @@ public class AudioManager : MonoBehaviour
             }
         }
     }
+
+    public void Pause(string name) {
+        foreach (Sound sound in sounds) {
+            if (String.Equals(sound.name, name)) {
+                sound.source.Pause();
+            }
+        }
+    }
+
+    public void Unpause(string name) {
+        foreach (Sound sound in sounds) {
+            if (String.Equals(sound.name, name)) {
+                sound.source.UnPause();
+            } 
+        }
+    }
 }

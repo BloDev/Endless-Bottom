@@ -11,12 +11,14 @@ public class Main : MonoBehaviour
 
     public void Pause() { 
         FindObjectOfType<AudioManager>().Play("Pause Sound");
+        FindObjectOfType<AudioManager>().Pause("Background Music");
         Time.timeScale = 0f;
         pauseMenu.SetActive(true);
     }
 
     public void Resume() {
         FindObjectOfType<AudioManager>().Play("Unpause Sound");
+        FindObjectOfType<AudioManager>().Unpause("Background Music");
         Time.timeScale = 1f;
         pauseMenu.SetActive(false);
     }
