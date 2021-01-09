@@ -39,6 +39,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    public void Stop(string name) {
+        foreach (Sound sound in sounds) {
+            if (String.Equals(sound.name, name)) {
+                sound.source.Stop();
+            }
+        }
+    }
+
     public void Pause(string name) {
         foreach (Sound sound in sounds) {
             if (String.Equals(sound.name, name)) {
