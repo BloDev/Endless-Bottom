@@ -19,7 +19,9 @@ public class PowerUpTimeSlow : MonoBehaviour
 
         GameObject.Find("Spawner").GetComponent<PlatformSpawner>().platformSpeed = 2.5f;
         GameObject.Find("Spawner").GetComponent<PlatformSpawner>().spawnTimer *= 2;
+
         yield return new WaitForSeconds(5);
+        
         GameObject.Find("Spawner").GetComponent<PlatformSpawner>().platformSpeed = 5;
         GameObject.Find("Spawner").GetComponent<PlatformSpawner>().spawnTimer *= 0.5f;
         Destroy(gameObject);
