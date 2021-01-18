@@ -25,7 +25,6 @@ public class Main : MonoBehaviour
 
     public void MainMenu() {
         FindObjectOfType<AudioManager>().Play("Button Clicking Sound");
-        FindObjectOfType<AudioManager>().UnPause("Background Music");
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
