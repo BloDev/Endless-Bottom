@@ -8,7 +8,6 @@ public class PowerUpTimeSlow : MonoBehaviour
     private float initialSpawnSpeed;
 
     void OnTriggerEnter2D(Collider2D collision) {
-
         if (collision.gameObject.tag == "Player") {
             gameObject.GetComponent<Renderer>().enabled = false;
             StartCoroutine(slowTime());
@@ -16,7 +15,6 @@ public class PowerUpTimeSlow : MonoBehaviour
     }
 
     IEnumerator slowTime() {
-
         GameObject.Find("Spawner").GetComponent<PlatformSpawner>().platformSpeed = 2.5f;
         GameObject.Find("Spawner").GetComponent<PlatformSpawner>().spawnTimer *= 2;
 

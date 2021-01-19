@@ -27,10 +27,6 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    void Start() {
-        Play("Background Music");
-    }
-
     public void Play(string name) {
         foreach (Sound sound in sounds) {
             if (String.Equals(sound.name, name)) {

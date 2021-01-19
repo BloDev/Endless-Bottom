@@ -18,8 +18,8 @@ public class GameOver : MonoBehaviour
     }
 
     public void Restart() {
-        FindObjectOfType<AudioManager>().Play("Button Clicking Sound");
         FindObjectOfType<AudioManager>().Play("Background Music");
+        FindObjectOfType<AudioManager>().Play("Button Clicking Sound");
         SceneManager.LoadScene(1);
     }
 
