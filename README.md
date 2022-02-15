@@ -1,4 +1,4 @@
-# To-The-Bottom
+# Endless Bottom
 
 A fun 2D mobile game!
 
